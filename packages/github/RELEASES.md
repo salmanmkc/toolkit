@@ -2,8 +2,9 @@
 
 ### 9.1.0
 
-- Append `actions_orchestration_id` to user-agent when `ACTIONS_ORCHESTRATION_ID` environment variable is set
+- Append `actions_orchestration_id` to user-agent when `ACTIONS_ORCHESTRATION_ID` environment variable is set [#2364](https://github.com/actions/toolkit/pull/2364)
 - Export `getUserAgentWithOrchestrationId` from `@actions/github/lib/utils` for downstream consumers
+- Idempotency guard prevents duplicate orchestration ID when both caller and `getOctokitOptions` apply it
 
 ### 9.0.0
 
